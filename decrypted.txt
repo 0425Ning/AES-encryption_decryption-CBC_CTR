@@ -1,0 +1,2 @@
+Hello, this is a plaintext note with CBC anc CTR mode.
+您好，這是帶有AES加解密之CBC和CTR模式的明文文件。
