@@ -6,7 +6,7 @@
 #define Nk 4 // keysize / 32, keysize = 128 in this case
 #define Nr 10 // Nr = Nk + 6
 #define BLOCK_SIZE 16 // AES block size in bytes
-#define ROUNDKEY_SIZE 176 // 16 bytes * (Nr+1)
+#define ROUNDKEY_SIZE 176 // BLOCK_SIZE * (Nr+1)
 #define STATE_DIMENSION 4
 #define BOX_SIZE 256
 #define RCON_SIZE 11
