@@ -12,12 +12,12 @@ gcc -o main main.c aes.c encrypt.c decrypt.c
 ```
 
 ### Enter the required data
-Enter aes_enc or aes_dec to encrypt or decrypt the file. <br />
-Enter plaintext file name to encrypt. <br />
-Enter the Ciphertext file name to write out the cipher. <br />
-Enter the Decrypted file name to write out the decrypt. <br />
-Enter the key (length 16 for block_size = 128). <br />
-Enter AES mode (Only CBC or CTR). <br />
+Enter aes_enc or aes_dec to encrypt or decrypt the file: aes_enc (or aes_dec). <br />
+Enter plaintext file name to encrypt: plaintext.txt <br />
+Enter the Ciphertext file name to write out the cipher: ciphertext.txt <br />
+Enter the Decrypted file name to write out the decrypt: decrypted.txt <br />
+Enter the key (length 16 for block_size = 128): abcdefghijklmnop <br />
+Enter AES mode (Only CBC or CTR): CBC (or CTR) <br />
 <br />
 
 ### Key Expansion
