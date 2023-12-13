@@ -10,6 +10,7 @@ gcc -o main main.c aes.c encrypt.c decrypt.c
 # Run
 ./main
 ```
+
 ### Enter the required data
 Enter aes_enc or aes_dec to encrypt or decrypt the file. <br />
 Enter plaintext file name to encrypt. <br />
@@ -27,7 +28,6 @@ KeyExpansion: Let the key that you just entered expand. <br />
 encryptFile: Let the file be encrypted. <br />
 Then let the data in the file be divided into several data blocks of size BLOCK_SIZE. <br />
 Calculate how many bytes are needed to fill a block, which has the remaining data. Let the calculated number of bytes be the padding value, and use the padding value to fill the block. <br />
-<br />
 
 AES_encrypt: <br />
 If the mode is CBC, XOR the plaintext block with iv or ciphertext. If the mode is CTR, iv must be used as the state for subsequent encryption steps. <br />
@@ -40,13 +40,11 @@ After that, if the mode is CBC, the encrypted result must be stored as state_sav
 decryptFile: Let the file be decrypted. <br />
 Then let the data in the file be divided into several data blocks of size BLOCK_SIZE. <br />
 If the mode is CTR, combine the randomly generated nonce and the counter be the iv, and then do the AES_encrypt. <br />
-<br />
 
 AES_decrypt: <br />
 To implement AES decryption, first, execute AddRoundKey with the initial value Nr (first round = Nr), and then execute the four steps of InvShiftRows, InvSubBytes, AddRoundKey, and InvMixColumns with Nr-1 times. <br />
 Finally, execute the three steps of InvShiftRows, InvSubBytes, and AddRoundKey. <br />
 After that, if the mode is CBC, the encrypted result must be XORed with the iv or previous ciphertext block as output. Also, store the input value, which is the state this time, as state_save. <br />
-<br />
 
 After deducting padding from the decryptedBuffer, write it into the output file. <br />
 <br />
