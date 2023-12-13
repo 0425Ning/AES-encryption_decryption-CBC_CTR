@@ -240,7 +240,7 @@ int main() {
     fclose(decrypted_file);
 
     printf("------------------------------------------------\n");
-    printf("Encryption process complete !! \n");
+    printf("Encryption & Decryption process complete !! \n");
 
     return 0;
 }
